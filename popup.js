@@ -1,13 +1,7 @@
 
 //popup.js 
 
- // chrome.runtime.onMessage.addListener(
- //  function(request, sender, sendResponse) {
-	// console.log('here'); 
- //    if( request.message === "clicked_browser_action" ) {
+//activated only on a Netflix page 
 
-		chrome.runtime.sendMessage({"message": "shoot_notification"});
-//     }
-//   }
-// );
+chrome.runtime.sendMessage({"message": "shoot_notification"});
 
