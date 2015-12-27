@@ -3,7 +3,7 @@
   "manifest_version": 2,
 
   "name": "Click to execute",
-  "description": "Execute script after click in popup.html (chrome extension) http://stackoverflow.com/questions/20764517/execute-script-after-click-in-popup-html-chrome-extension.",
+  "description": "Social media monitor",
   "version": "1.0",
 
   "icons": {
@@ -14,8 +14,7 @@
     "notifications",
     "tabs", 
     "alarms",
-    "http://www.netflix.com/*", 
-    "<all_urls>"
+    "http://www.netflix.com/*"
   ],
 
   "content_scripts":[
@@ -26,6 +25,7 @@
   ],
 
   "background": {
+    "matches": ["http://www.netflix.com/*"],
     "scripts": ["background.js"]
   },
   
