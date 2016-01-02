@@ -1,7 +1,10 @@
 
-//popup.js 
+//not used rn 
 
-//activated only on a Netflix page 
+function hello() {
+  chrome.tabs.executeScript({
+    file: 'alert.js'
+  }); 
+}
 
-chrome.runtime.sendMessage({"message": "shoot_notification"});
-
+document.getElementById('clickme').addEventListener('click', hello);
